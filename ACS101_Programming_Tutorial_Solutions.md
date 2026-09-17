@@ -12,9 +12,9 @@ All 44 week-by-week tutorial problems from the syllabus, solved in C (Weeks 1–
 int main() {
     char name[50], branch[50];
     printf("Enter your name: ");
-    scanf("%s", name);
+    scanf("%s", &name);
     printf("Enter your branch: ");
-    scanf("%s", branch);
+    scanf("%s", &branch);
     printf("Name: %s\nBranch: %s\n", name, branch);
     return 0;
 }
