@@ -2,10 +2,12 @@
 
 #include <stdio.h>
 int main() {
-    float length, width, area;
-    printf("Enter length and width: ");
-    scanf("%f %f", &length, &width);
-    area = length * width;
-    printf("Area of rectangle = %.2f\n", area);
+    float length, width;
+    printf("Enter length of Rectangle: ");
+    scanf("%f", &length);
+    printf("Enter width of Rectangle: ");
+    scanf("%f", &width);
+    float Area=length * width;
+    printf("Area of rectangle = %.2f\n",Area);
     return 0;
 }
