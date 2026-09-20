@@ -6,43 +6,6 @@ All 44 week-by-week tutorial problems from the syllabus, solved in C (Weeks 1–
 
 ## Week 5 (C)
 
-### 1. Print prime numbers from 1 to 50
-```c
-#include <stdio.h>
-int main() {
-    printf("Prime numbers from 1 to 50:\n");
-    for (int n = 2; n <= 50; n++) {
-        int isPrime = 1;
-        for (int i = 2; i * i <= n; i++) {
-            if (n % i == 0) {
-                isPrime = 0;
-                break;
-            }
-        }
-        if (isPrime)
-            printf("%d ", n);
-    }
-    printf("\n");
-    return 0;
-}
-```
-
-### 2. Fibonacci series (first 10 terms)
-```c
-#include <stdio.h>
-int main() {
-    int n = 10, a = 0, b = 1, next;
-    printf("First 10 Fibonacci terms:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", a);
-        next = a + b;
-        a = b;
-        b = next;
-    }
-    printf("\n");
-    return 0;
-}
-```
 
 ### 3. Reverse a number
 ```c
