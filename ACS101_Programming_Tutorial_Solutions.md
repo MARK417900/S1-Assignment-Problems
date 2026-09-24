@@ -2,49 +2,6 @@
 
 All 44 week-by-week tutorial problems from the syllabus, solved in C (Weeks 1–10) and Python (Weeks 11–15). Every program below has been compiled/run and verified working.
 
----
-
-## Week 5 (C)
-
-
-### 3. Reverse a number
-```c
-#include <stdio.h>
-int main() {
-    int n, reversed = 0, remainder;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    int original = n;
-    while (n != 0) {
-        remainder = n % 10;
-        reversed = reversed * 10 + remainder;
-        n /= 10;
-    }
-    printf("Reverse of %d is %d\n", original, reversed);
-    return 0;
-}
-```
-
----
-
-## Week 6 (C)
-
-### 1. Factorial using function
-```c
-#include <stdio.h>
-long factorial(int n) {
-    if (n <= 1) return 1;
-    return n * factorial(n - 1);
-}
-int main() {
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("Factorial of %d = %ld\n", n, factorial(n));
-    return 0;
-}
-```
-
 ### 2. Check palindrome number using function
 ```c
 #include <stdio.h>

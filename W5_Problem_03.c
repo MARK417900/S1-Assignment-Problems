@@ -14,3 +14,6 @@ int main() {
     printf("Reverse of %d is %d\n", original, reversed);
     return 0;
 }
+
+
+// Try to reverse it using string 

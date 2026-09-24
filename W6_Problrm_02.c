@@ -1,0 +1,1 @@
+// Check palindrome number using function
